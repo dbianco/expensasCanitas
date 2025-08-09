@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let barChartCtx, lineChartCtx, pieChartCtx;
     let monthFromFilter, monthToFilter;
     let categoryFilterButton, categoryFilterDropdown, categoryFilterList, categoryFilterText;
+    let categoryColorMap = {};
 
     // This function finds and assigns all our needed DOM elements to the variables above.
     function queryDOMElements() {
@@ -70,7 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- INITIALIZATION ---
     function initialize() {
         allMonths = [...new Set(expensesData.map(d => d.mes))].sort();
-        allCategories = [...new Set(expensesData.map(d => d.categoria))].sort();
+                        allCategories = [...new Set(expensesData.map(d => d.categoria))].sort();
+        allCategories.forEach((cat, index) => { categoryColorMap[cat] = COLORS[index % COLORS.length]; });
         populateMonthFilters();
         populateCategoryFilter();
         setupEventListeners();
@@ -130,19 +132,22 @@ document.addEventListener('DOMContentLoaded', () => {
             categoryFilterDropdown.classList.toggle('hidden');
         });
 
-        categoryFilterList.addEventListener('change', (e) => {
-            const checkbox = e.target;
-            if (checkbox.type !== 'checkbox') return;
+        categoryFilterDropdown.addEventListener('change', e => {
+            const clickedCheckbox = e.target;
+            if (clickedCheckbox.tagName !== 'INPUT' || clickedCheckbox.type !== 'checkbox') return;
 
-            const checkboxes = categoryFilterList.querySelectorAll('input[type="checkbox"]');
-            const allCheckbox = checkboxes[0];
+            const allCheckboxes = Array.from(categoryFilterList.querySelectorAll('input[type="checkbox"]'));
+            const allOptionCheckbox = allCheckboxes.find(cb => cb.value === 'all');
+            const categoryCheckboxes = allCheckboxes.filter(cb => cb.value !== 'all');
 
-            if (checkbox.value === 'all') {
-                checkboxes.forEach(cb => cb.checked = checkbox.checked);
+            if (clickedCheckbox.value === 'all') {
+                // If 'Todos' was clicked, set all other checkboxes to match its state
+                categoryCheckboxes.forEach(cb => cb.checked = clickedCheckbox.checked);
             } else {
-                const allCategoriesChecked = [...checkboxes].slice(1).every(cb => cb.checked);
-                allCheckbox.checked = allCategoriesChecked;
+                // If an individual category was clicked, update the 'Todos' checkbox
+                allOptionCheckbox.checked = categoryCheckboxes.every(cb => cb.checked);
             }
+
             updateCategoryButtonText();
             updateCharts();
         });
@@ -199,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return {
                 label: cat,
                 data: dataByMonth,
-                borderColor: COLORS[index % COLORS.length],
+                borderColor: categoryColorMap[cat],
                 tension: 0.1,
                 fill: false
             };
@@ -214,7 +219,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateBarChart(data, from, to) {
-        const dataByCat = data.reduce((acc, curr) => {
+        const dataForChart = data.filter(d => d.categoria.toLowerCase() !== 'total');
+        const dataByCat = dataForChart.reduce((acc, curr) => {
             acc[curr.categoria] = (acc[curr.categoria] || 0) + curr.monto;
             return acc;
         }, {});
@@ -227,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 datasets: [{ 
                     label: `Gastos (${from} a ${to})`, 
                     data: Object.values(dataByCat), 
-                    backgroundColor: 'rgba(54, 162, 235, 0.6)' 
+                    backgroundColor: Object.keys(dataByCat).map(cat => categoryColorMap[cat]) 
                 }] 
             },
             options: { scales: { y: { beginAtZero: true } }, responsive: true, maintainAspectRatio: false }
@@ -235,8 +241,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updatePieChart(data, from, to) {
-        const dataBySubCat = data.reduce((acc, curr) => {
-            acc[curr.subcategoria] = (acc[curr.subcategoria] || 0) + curr.monto;
+        const dataForChart = data.filter(d => d.categoria.toLowerCase() !== 'total');
+        const dataByCat = dataForChart.reduce((acc, curr) => {
+            acc[curr.categoria] = (acc[curr.categoria] || 0) + curr.monto;
             return acc;
         }, {});
 
@@ -244,14 +251,38 @@ document.addEventListener('DOMContentLoaded', () => {
         pieChart = new Chart(pieChartCtx, {
             type: 'pie',
             data: { 
-                labels: Object.keys(dataBySubCat), 
+                labels: Object.keys(dataByCat), 
                 datasets: [{ 
                     label: `Proporción (${from} a ${to})`, 
-                    data: Object.values(dataBySubCat), 
-                    backgroundColor: Object.keys(dataBySubCat).map((_, i) => COLORS[i % COLORS.length])
+                    data: Object.values(dataByCat), 
+                    backgroundColor: Object.keys(dataByCat).map(cat => categoryColorMap[cat])
                 }] 
             },
-            options: { responsive: true, maintainAspectRatio: false }
+                        options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const label = context.label || '';
+                                const value = context.raw || 0;
+                                const total = context.chart.getDatasetMeta(0).total;
+                                const percentage = total > 0 ? ((value / total) * 100).toFixed(2) + '%' : '0%';
+                                
+                                const formattedValue = value.toLocaleString('es-AR', {
+                                    style: 'currency',
+                                    currency: 'ARS',
+                                    minimumFractionDigits: 0,
+                                    maximumFractionDigits: 0
+                                });
+
+                                return `${label}: ${formattedValue} (${percentage})`;
+                            }
+                        }
+                    }
+                }
+            }
         });
     }
 
