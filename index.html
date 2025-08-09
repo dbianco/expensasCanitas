@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Expensas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Dashboard de Expensas</h1>
+    </header>
+
+    <main>
+        <section class="filters">
+            <div class="filter-group">
+                <label for="month-from-filter">Mes Desde:</label>
+                <select id="month-from-filter"></select>
+            </div>
+            <div class="filter-group">
+                <label for="month-to-filter">Mes Hasta:</label>
+                <select id="month-to-filter"></select>
+            </div>
+            <div class="filter-group">
+                <label>Categorías (para Evolución Mensual):</label>
+                <div class="relative">
+                    <button id="category-filter-button" class="inline-flex items-center overflow-hidden rounded-md border bg-white px-4 py-2 text-sm/none text-gray-600 hover:bg-gray-50 hover:text-gray-700 w-full justify-between min-w-[200px]">
+                        <span id="category-filter-text">Seleccionar...</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </button>
+
+                    <div id="category-filter-dropdown" class="absolute end-0 z-10 mt-2 w-full rounded-md border border-gray-100 bg-white shadow-lg hidden" role="region">
+                        <ul id="category-filter-list" class="p-2 space-y-1">
+                            <!-- Options will be dynamically inserted here -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="charts">
+            <div class="chart-container" id="line-chart-container">
+                <h2>Evolución Mensual</h2>
+                <canvas id="line-chart"></canvas>
+            </div>
+            <div class="chart-container" id="bar-chart-container">
+                <h2>Gastos por Categoría (Período Seleccionado)</h2>
+                <canvas id="bar-chart"></canvas>
+            </div>
+            <div class="chart-container" id="pie-chart-container">
+                <h2>Proporción por Subcategoría (Período Seleccionado)</h2>
+                <canvas id="pie-chart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js?v=202408082326"></script>
+</body>
+</html>
