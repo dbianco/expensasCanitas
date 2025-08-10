@@ -7,6 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/modules/sankey.js"></script>
+    <script src="https://code.highcharts.com/modules/organization.js"></script>
 </head>
 <body>
 
@@ -55,17 +60,31 @@
         </section>
 
         <section class="charts">
-            <div id="line-chart-container" class="chart-container">
-                <h2>Evolución Mensual</h2>
+            <div id="individual-chart-container" class="chart-container full-width">
+                <h2>Evolución Gastos Por Lote</h2>
+                <div id="individual-chart"></div>
+            </div>
+            <div id="line-chart-container" class="chart-container full-width">
+                <h2>Evolución Gastos Totales</h2>
                 <div id="line-chart"></div>
             </div>
-            <div id="bar-chart-container" class="chart-container">
+            <div id="bar-chart-container" class="chart-container full-width">
                 <h2>Gastos por Categoría</h2>
                 <div id="bar-chart"></div>
             </div>
-            <div id="pie-chart-container" class="chart-container">
-                <h2>Proporción por Categoría</h2>
-                <div id="pie-chart"></div>
+            <div class="flex flex-wrap -mx-2 w-full">
+                <div class="w-full md:w-1/2 px-2 mb-4">
+                    <div id="pie-chart-container" class="chart-container">
+                        <h2>Proporción por Categoría</h2>
+                        <div id="pie-chart"></div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 px-2 mb-4">
+                    <div id="sankey-chart-container" class="chart-container">
+                        <h2>Desglose de la Categoría con Mayor Gasto</h2>
+                        <div id="sankey-chart"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

@@ -54,13 +54,14 @@ select {
 }
 
 .charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas por defecto */
-    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
 }
 
-#line-chart-container {
-    grid-column: 1 / -1; /* Ocupa todas las columnas */
+.full-width {
+    width: 100%;
 }
 
 .chart-container {
@@ -68,10 +69,19 @@ select {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    position: relative; /* Requerido para el tamaño responsivo de Chart.js */
-    height: 50vh; /* Altura relativa a la pantalla */
-    max-height: 400px; /* Una altura máxima para pantallas grandes */
-    min-height: 300px; /* Una altura mínima para que no sea demasiado pequeño */
+    position: relative;
+    min-height: 300px; /* Altura mínima para que no sea demasiado pequeño */
+}
+
+/* Estilo específico para el gráfico de barras */
+#bar-chart-container {
+    min-height: 400px; /* Altura mínima más grande para el gráfico de barras */
+}
+
+/* Estilo específico para el gráfico de torta */
+#pie-chart-container {
+    margin-top: 40px; /* Espacio adicional arriba del gráfico de torta */
+    min-height: 400px; /* Altura mínima para el gráfico de torta */
 }
 
 h2 {
@@ -83,18 +93,21 @@ h2 {
 
 @media (max-width: 900px) {
     .charts {
-        grid-template-columns: 1fr;
         gap: 25px;
     }
 
-    #line-chart-container, #bar-chart-container, #pie-chart-container {
-        grid-column: auto;
-    }
-
     .chart-container {
-        height: auto;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    #bar-chart-container {
         min-height: 300px;
-        max-height: none;
+    }
+    
+    #pie-chart-container {
+        margin-top: 30px;
+        min-height: 350px;
     }
 }
 
