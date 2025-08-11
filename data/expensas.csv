@@ -1,87 +1,792 @@
 mes,categoria,subcategoria,monto
-2025-07,Administración,Actas (copia),3900
-2025-07,Administración,Aportes y contribuciones,1029611
-2025-07,Administración,Diferencia gastos bancarios,823356
-2025-07,Administración,Estudio contable,415000
-2025-07,Administración,Estudio jurídico,342000
-2025-07,Administración,Gastos bancarios,4692461
-2025-07,Administración,Honorarios administración,1743000
-2025-07,Administración,Honorarios mediación,169179
-2025-07,Administración,Proceso de datos,164421
-2025-07,Administración,Sueldo intendente,1341307
-2025-07,Administración,UTEDYC,85540
-2025-07,Espacios verdes,Espacios verdes,8920285
-2025-07,Espacios verdes,Poda (retiro de poda),1825800
-2025-07,Mantenimiento,Artículos de limpieza,48200
-2025-07,Mantenimiento,Limpieza SUM,910000
-2025-07,Mantenimiento,Limpieza quinchos,96000
-2025-07,Mantenimiento,Cloro cisterna,280000
-2025-07,Mantenimiento,Extracción de tierra,1270000
-2025-07,Mantenimiento,Mantenimiento eléctrico,625182
-2025-07,Mantenimiento,Mantenimiento general,120000
-2025-07,Mantenimiento,Materiales de arreglo,65611
-2025-07,Mantenimiento,Materiales eléctricos,529836
-2025-07,Mantenimiento,Pinturería,56605
-2025-07,Mantenimiento,Servicios de bomba,234324
-2025-07,Mantenimiento,Vallas reducción velocidad,740000
-2025-07,Mantenimiento,Viaje ramas extras,393250
-2025-07,Seguridad,Cambio de matafuegos,45000
-2025-07,Seguridad,Diferencia teléfono guardia,3894
-2025-07,Seguridad,Empresa de seguridad,84934087
-2025-07,Seguridad,Garitas,145200
-2025-07,Seguridad,Mantenimiento cámaras,7929469
-2025-07,Seguridad,Mantenimiento cámaras (preventivo),26940
-2025-07,Seguridad,Netglobal SAS Internet Bunker,28300
-2025-07,Seguridad,Policía adicional,13032447
-2025-07,Seguridad,Renovación seguro Integrity,0
-2025-07,Seguridad,Teléfono guardia puestos 1 y 2,154092
-2025-07,Administración,Seguro accidentes personales,16067
-2025-07,Servicios,Análisis de agua,380000
-2025-07,Servicios,Diferencia impuesto rentas,1810
-2025-07,Servicios,Energía eléctrica,4247032
-2025-07,Servicios,Impuesto rentas,236230
-2025-07,Servicios,Servicio de aguas,3480
-2025-07,Total,Total mensual,138108916
-2024-05,Administración,Aportes y contribuciones,430082
-2024-05,Administración,Certificado balance 2023,129752
-2024-05,Administración,Diferencia gastos bancarios,448856
-2024-05,Administración,Diferencia proceso de datos,1075
-2024-05,Administración,Estudio contable,249500
-2024-05,Administración,Estudio jurídico,210000
-2024-05,Administración,Gastos bancarios,2198326
-2024-05,Administración,Librería,16770
-2024-05,Administración,Proceso de datos,92070
-2024-05,Administración,Seguro accidentes personales,6982
-2024-05,Administración,Sueldo intendente,862500
-2024-05,Administración,Honorarios administración,749880
-2024-05,Seguridad,Abono mantenimiento Super Cam,3913900
-2024-05,Seguridad,Diferencia teléfono guardia,11917
-2024-05,Seguridad,Empresa de seguridad,44871606
-2024-05,Seguridad,Garitas,152460
-2024-05,Seguridad,Policía adicional,3874370
-2024-05,Seguridad,Seguro barrio Integrity 1/3,32559
-2024-05,Seguridad,Servicio técnico CCTV inalámbrico,128000
-2024-05,Seguridad,Teléfono guardia puestos 1 y 2,71595
-2024-05,Servicios,Análisis de agua,231600
-2024-05,Servicios,Energía eléctrica,2489024
-2024-05,Servicios,Impuesto rentas,53600
-2024-05,Servicios,Servicio de aguas,1573
-2024-05,Servicios,Servicio Hola Country (abono),393250
-2024-05,Servicios,Urgencias médicas,101400
-2024-05,Espacios verdes,Espacios verdes,4344395
-2024-05,Espacios verdes,Poda (retiro de poda),338031
-2024-05,Mantenimiento,Arreglos farolas,231000
-2024-05,Mantenimiento,Basani baños químicos,40051
-2024-05,Mantenimiento,Cartelería,2500
-2024-05,Mantenimiento,Cloro cisterna,124000
-2024-05,Mantenimiento,Desagotadora puesto 1,55000
-2024-05,Mantenimiento,Ferretería,11140
-2024-05,Mantenimiento,Limpieza perimetral,250000
-2024-05,Mantenimiento,Mano de obra desagotadora puesto 1,120000
-2024-05,Mantenimiento,Mantenimiento luminarias,313236
-2024-05,Mantenimiento,Materiales eléctricos,314852
-2024-05,Mantenimiento,Pintura,41700
-2024-05,Mantenimiento,Servicios de bomba,106230
-2024-05,Mantenimiento,Sondeo pozo puesto 1,120000
-2024-05,Total,Total mensual,68134782
-
+2024-01,Administración,Aportes y contribuciones,158000.0
+2024-01,Administración,Estudio contable,118500.0
+2024-01,Administración,Estudio jurídico,109100.0
+2024-01,Administración,Gastos bancarios,1200232.0
+2024-01,Administración,Honorarios administración,567083.0
+2024-01,Administración,Librería,20480.0
+2024-01,Administración,Proceso de datos,71650.0
+2024-01,Administración,Seguro accidentes personales,18381.0
+2024-01,Administración,Seguro accidentes personales,6982.0
+2024-01,Administración,Sueldo intendente,585252.0
+2024-01,Administración,Sueldo intendente,161681.0
+2024-01,Administración,Sueldo intendente,9150.0
+2024-01,Espacios verdes,Espacios verdes,2246727.0
+2024-01,Espacios verdes,Poda (retiro de poda),172500.0
+2024-01,Mantenimiento,Arreglos farolas,80000.0
+2024-01,Mantenimiento,Artículos de limpieza,9600.0
+2024-01,Mantenimiento,Basani baños químicos,28000.0
+2024-01,Mantenimiento,Cloro cisterna,45000.0
+2024-01,Mantenimiento,Desagotadora puesto 1,9999.0
+2024-01,Mantenimiento,Ferretería,1400.0
+2024-01,Mantenimiento,Mantenimiento general,64000.0
+2024-01,Mantenimiento,Mantenimiento luminarias,152500.0
+2024-01,Mantenimiento,Materiales de arreglo,99604.0
+2024-01,Mantenimiento,Materiales de arreglo,29777.0
+2024-01,Mantenimiento,Servicios de bomba,65349.0
+2024-01,Seguridad,Abono mantenimiento Super Cam,2486862.0
+2024-01,Seguridad,Cambio de matafuegos,363000.0
+2024-01,Seguridad,Empresa de seguridad,25672005.0
+2024-01,Seguridad,Empresa de seguridad,96489.0
+2024-01,Seguridad,Garitas,85305.0
+2024-01,Seguridad,Policía adicional,1642686.0
+2024-01,Seguridad,Renovación seguro Integrity,-363000.0
+2024-01,Seguridad,Seguro barrio Integrity 1/3,7825.0
+2024-01,Seguridad,Teléfono guardia puestos 1 y 2,32158.0
+2024-01,Servicios,Análisis de agua,143000.0
+2024-01,Servicios,Energía eléctrica,973025.0
+2024-01,Servicios,Impuesto rentas,18700.0
+2024-01,Servicios,Servicio Hola Country (abono),135000.0
+2024-01,Servicios,Servicio de aguas,979.0
+2024-01,Servicios,Urgencias médicas,101400.0
+2024-01,Total,Total mensual,37426381.0
+2024-02,Administración,Aportes y contribuciones,158000.0
+2024-02,Administración,Estudio contable,118500.0
+2024-02,Administración,Estudio jurídico,109100.0
+2024-02,Administración,Gastos bancarios,1143576.0
+2024-02,Administración,Honorarios administración,567083.0
+2024-02,Administración,Librería,5400.0
+2024-02,Administración,Proceso de datos,71650.0
+2024-02,Administración,Seguro accidentes personales,6982.0
+2024-02,Administración,Sueldo intendente,549999.0
+2024-02,Espacios verdes,Espacios verdes,2302430.0
+2024-02,Espacios verdes,Poda (retiro de poda),150000.0
+2024-02,Mantenimiento,Artículos de limpieza,19850.0
+2024-02,Mantenimiento,Basani baños químicos,33100.0
+2024-02,Mantenimiento,Cloro cisterna,218000.0
+2024-02,Mantenimiento,Desagotadora puesto 1,120000.0
+2024-02,Mantenimiento,Extracción de tierra,213900.0
+2024-02,Mantenimiento,Ferretería,14781.0
+2024-02,Mantenimiento,Limpieza SUM,9700.0
+2024-02,Mantenimiento,Mantenimiento general,36000.0
+2024-02,Mantenimiento,Mantenimiento luminarias,210908.0
+2024-02,Mantenimiento,Materiales de arreglo,637730.0
+2024-02,Mantenimiento,Materiales eléctricos,528145.0
+2024-02,Mantenimiento,Servicios de bomba,83646.0
+2024-02,Seguridad,Abono mantenimiento Super Cam,3675800.0
+2024-02,Seguridad,Empresa de seguridad,30620488.0
+2024-02,Seguridad,Garitas,110715.0
+2024-02,Seguridad,Mantenimiento cámaras,100000.0
+2024-02,Seguridad,Policía adicional,2104352.0
+2024-02,Seguridad,Seguro barrio Integrity 1/3,7825.0
+2024-02,Seguridad,Teléfono guardia puestos 1 y 2,38238.0
+2024-02,Servicios,Análisis de agua,143000.0
+2024-02,Servicios,Energía eléctrica,921456.0
+2024-02,Servicios,Impuesto rentas,45050.0
+2024-02,Servicios,Servicio Hola Country (abono),302500.0
+2024-02,Servicios,Servicio de aguas,1040.0
+2024-02,Servicios,Urgencias médicas,101400.0
+2024-02,Total,Total mensual,45480344.0
+2024-03,Administración,Aportes y contribuciones,356105.0
+2024-03,Administración,Estudio contable,182000.0
+2024-03,Administración,Estudio jurídico,165100.0
+2024-03,Administración,Gastos bancarios,1752691.0
+2024-03,Administración,Honorarios administración,663475.0
+2024-03,Administración,Proceso de datos,71650.0
+2024-03,Administración,Seguro accidentes personales,6982.0
+2024-03,Administración,Sueldo intendente,625000.0
+2024-03,Espacios verdes,Espacios verdes,3343129.0
+2024-03,Espacios verdes,Poda (retiro de poda),255600.0
+2024-03,Mantenimiento,Artículos de limpieza,12584.0
+2024-03,Mantenimiento,Basani baños químicos,33100.0
+2024-03,Mantenimiento,Cartelería,31396.0
+2024-03,Mantenimiento,Cloro cisterna,246000.0
+2024-03,Mantenimiento,Cloro cisterna,12800.0
+2024-03,Mantenimiento,Ferretería,21260.0
+2024-03,Mantenimiento,Mano de obra desagotadora puesto 1,340060.0
+2024-03,Mantenimiento,Mantenimiento general,54000.0
+2024-03,Mantenimiento,Mantenimiento luminarias,210908.0
+2024-03,Mantenimiento,Materiales eléctricos,26759.0
+2024-03,Mantenimiento,Pintura,89330.0
+2024-03,Mantenimiento,Servicios de bomba,83646.0
+2024-03,Seguridad,Abono mantenimiento Super Cam,3913900.0
+2024-03,Seguridad,Empresa de seguridad,28644973.0
+2024-03,Seguridad,Garitas,110715.0
+2024-03,Seguridad,Policía adicional,2885155.0
+2024-03,Seguridad,Seguro barrio Integrity 1/3,21443.0
+2024-03,Seguridad,Teléfono guardia puestos 1 y 2,47770.0
+2024-03,Servicios,Análisis de agua,193000.0
+2024-03,Servicios,Energía eléctrica,1147135.0
+2024-03,Servicios,Impuesto rentas,45050.0
+2024-03,Servicios,Servicio Hola Country (abono),302500.0
+2024-03,Servicios,Servicio de aguas,1560.0
+2024-03,Servicios,Urgencias médicas,101400.0
+2024-03,Total,Total mensual,45998176.0
+2024-04,Administración,Aportes y contribuciones,381076.0
+2024-04,Administración,Certificado balance 2023,8000.0
+2024-04,Administración,Estudio contable,182000.0
+2024-04,Administración,Estudio jurídico,165100.0
+2024-04,Administración,Gastos bancarios,1749470.0
+2024-04,Administración,Honorarios administración,749880.0
+2024-04,Administración,Proceso de datos,90995.0
+2024-04,Administración,Seguro accidentes personales,6982.0
+2024-04,Administración,Seguro accidentes personales,220000.0
+2024-04,Administración,Sueldo intendente,737500.0
+2024-04,Espacios verdes,Espacios verdes,3844598.0
+2024-04,Espacios verdes,Poda (retiro de poda),293940.0
+2024-04,Mantenimiento,Arreglos farolas,64000.0
+2024-04,Mantenimiento,Artículos de limpieza,8300.0
+2024-04,Mantenimiento,Basani baños químicos,36410.0
+2024-04,Mantenimiento,Basani baños químicos,190000.0
+2024-04,Mantenimiento,Cloro cisterna,120000.0
+2024-04,Mantenimiento,Extracción de tierra,115000.0
+2024-04,Mantenimiento,Ferretería,69457.39
+2024-04,Mantenimiento,Mantenimiento general,36000.0
+2024-04,Mantenimiento,Mantenimiento luminarias,210908.0
+2024-04,Mantenimiento,Materiales eléctricos,120000.0
+2024-04,Mantenimiento,Pintura,27300.0
+2024-04,Mantenimiento,Servicios de bomba,106230.0
+2024-04,Seguridad,Abono mantenimiento Super Cam,3913900.0
+2024-04,Seguridad,Empresa de seguridad,39681072.0
+2024-04,Seguridad,Garitas,152460.0
+2024-04,Seguridad,Mantenimiento cámaras (preventivo),142000.0
+2024-04,Seguridad,Policía adicional,3091735.0
+2024-04,Seguridad,Seguro barrio Integrity 1/3,21443.0
+2024-04,Seguridad,Teléfono guardia puestos 1 y 2,59677.0
+2024-04,Servicios,Análisis de agua,193000.0
+2024-04,Servicios,Energía eléctrica,1375840.0
+2024-04,Servicios,Impuesto rentas,49630.0
+2024-04,Servicios,Servicio Hola Country (abono),393250.0
+2024-04,Servicios,Servicio de aguas,1560.0
+2024-04,Servicios,Urgencias médicas,101400.0
+2024-04,Total,Total mensual,58710113.39
+2024-05,Administración,Aportes y contribuciones,430082.0
+2024-05,Administración,Certificado balance 2023,129752.0
+2024-05,Administración,Diferencia gastos bancarios,448856.0
+2024-05,Administración,Diferencia proceso de datos,1075.0
+2024-05,Administración,Estudio contable,249500.0
+2024-05,Administración,Estudio jurídico,210000.0
+2024-05,Administración,Gastos bancarios,2198326.0
+2024-05,Administración,Honorarios administración,749880.0
+2024-05,Administración,Librería,16770.0
+2024-05,Administración,Proceso de datos,92070.0
+2024-05,Administración,Seguro accidentes personales,6982.0
+2024-05,Administración,Sueldo intendente,862500.0
+2024-05,Espacios verdes,Espacios verdes,4344395.0
+2024-05,Espacios verdes,Poda (retiro de poda),338031.0
+2024-05,Mantenimiento,Arreglos farolas,231000.0
+2024-05,Mantenimiento,Basani baños químicos,40051.0
+2024-05,Mantenimiento,Cartelería,2500.0
+2024-05,Mantenimiento,Cloro cisterna,124000.0
+2024-05,Mantenimiento,Desagotadora puesto 1,55000.0
+2024-05,Mantenimiento,Ferretería,11140.0
+2024-05,Mantenimiento,Limpieza perimetral,250000.0
+2024-05,Mantenimiento,Mano de obra desagotadora puesto 1,120000.0
+2024-05,Mantenimiento,Mantenimiento luminarias,313236.0
+2024-05,Mantenimiento,Materiales eléctricos,314852.0
+2024-05,Mantenimiento,Pintura,41700.0
+2024-05,Mantenimiento,Servicios de bomba,106230.0
+2024-05,Mantenimiento,Sondeo pozo puesto 1,120000.0
+2024-05,Seguridad,Abono mantenimiento Super Cam,3913900.0
+2024-05,Seguridad,Diferencia teléfono guardia,11917.0
+2024-05,Seguridad,Empresa de seguridad,44871606.0
+2024-05,Seguridad,Garitas,152460.0
+2024-05,Seguridad,Policía adicional,3874370.0
+2024-05,Seguridad,Seguro barrio Integrity 1/3,32559.0
+2024-05,Seguridad,Servicio técnico CCTV inalámbrico,128000.0
+2024-05,Seguridad,Teléfono guardia puestos 1 y 2,71595.0
+2024-05,Servicios,Análisis de agua,231600.0
+2024-05,Servicios,Energía eléctrica,2489024.0
+2024-05,Servicios,Impuesto rentas,53600.0
+2024-05,Servicios,Servicio Hola Country (abono),393250.0
+2024-05,Servicios,Servicio de aguas,1573.0
+2024-05,Servicios,Urgencias médicas,101400.0
+2024-05,Total,Total mensual,68134782.0
+2024-06,Administración,Aportes y contribuciones,521480.0
+2024-06,Administración,Diferencia proceso de datos,13400.0
+2024-06,Administración,Estudio contable,249500.0
+2024-06,Administración,Estudio jurídico,210000.0
+2024-06,Administración,Gastos bancarios,2383864.0
+2024-06,Administración,Honorarios administración,371964.0
+2024-06,Administración,Honorarios administración,20000.0
+2024-06,Administración,Librería,1400.0
+2024-06,Administración,Proceso de datos,92070.0
+2024-06,Administración,Seguro accidentes personales,6982.0
+2024-06,Administración,Sueldo intendente,948750.0
+2024-06,Espacios verdes,Espacios verdes,4713663.0
+2024-06,Espacios verdes,Poda (retiro de poda),366730.0
+2024-06,Mantenimiento,Arreglos farolas,163350.0
+2024-06,Mantenimiento,Artículos de limpieza,7200.0
+2024-06,Mantenimiento,Basani baños químicos,42900.0
+2024-06,Mantenimiento,Cartelería,76000.0
+2024-06,Mantenimiento,Cloro cisterna,120000.0
+2024-06,Mantenimiento,Desagotadora puesto 1,42999.0
+2024-06,Mantenimiento,Ferretería,32232.0
+2024-06,Mantenimiento,Mano de obra desagotadora puesto 1,69575.0
+2024-06,Mantenimiento,Mano de obra desagotadora puesto 1,-120000.0
+2024-06,Mantenimiento,Mantenimiento general,65000.0
+2024-06,Mantenimiento,Mantenimiento luminarias,313236.0
+2024-06,Mantenimiento,Pintura,60700.0
+2024-06,Mantenimiento,Servicios de bomba,140224.0
+2024-06,Mantenimiento,Vallas reducción velocidad,110000.0
+2024-06,Seguridad,Abono mantenimiento Super Cam,5350693.0
+2024-06,Seguridad,Empresa de seguridad,52492459.0
+2024-06,Seguridad,Garitas,163350.0
+2024-06,Seguridad,Policía adicional,5176106.0
+2024-06,Seguridad,Policía adicional,62780.0
+2024-06,Seguridad,Renovación seguro Integrity,93100.0
+2024-06,Seguridad,Seguro barrio Integrity 1/3,32559.0
+2024-06,Seguridad,Teléfono guardia puestos 1 y 2,78750.0
+2024-06,Servicios,Análisis de agua,231600.0
+2024-06,Servicios,Energía eléctrica,3129710.0
+2024-06,Servicios,Impuesto rentas,56600.0
+2024-06,Servicios,Servicio de aguas,1560.0
+2024-06,Servicios,Servicio de aguas,26000.0
+2024-06,Servicios,Urgencias médicas,121680.0
+2024-06,Total,Total mensual,78040166.0
+2024-07,Administración,Aportes y contribuciones,542513.0
+2024-07,Administración,Estudio contable,249500.0
+2024-07,Administración,Estudio jurídico,238100.0
+2024-07,Administración,Gastos bancarios,2897537.0
+2024-07,Administración,Honorarios administración,892357.0
+2024-07,Administración,Librería,12700.0
+2024-07,Administración,Proceso de datos,109563.0
+2024-07,Administración,Seguro accidentes personales,6982.0
+2024-07,Administración,Seguro accidentes personales,168388.0
+2024-07,Administración,Sueldo intendente,1869079.0
+2024-07,Administración,Sueldo intendente,860293.0
+2024-07,Administración,Sueldo intendente,66176.0
+2024-07,Espacios verdes,Espacios verdes,4713663.0
+2024-07,Espacios verdes,Poda (retiro de poda),386276.0
+2024-07,Mantenimiento,Basani baños químicos,45903.0
+2024-07,Mantenimiento,Cloro cisterna,124000.0
+2024-07,Mantenimiento,Ferretería,32062.0
+2024-07,Mantenimiento,Mano de obra desagotadora puesto 1,69575.0
+2024-07,Mantenimiento,Mantenimiento eléctrico,355114.0
+2024-07,Mantenimiento,Mantenimiento general,52000.0
+2024-07,Mantenimiento,Servicios de bomba,133100.0
+2024-07,Seguridad,Abono mantenimiento Super Cam,5350693.0
+2024-07,Seguridad,Cambio de matafuegos,16800.0
+2024-07,Seguridad,Empresa de seguridad,50799153.0
+2024-07,Seguridad,Empresa de seguridad,180000.0
+2024-07,Seguridad,Garitas,163350.0
+2024-07,Seguridad,Policía adicional,5100726.0
+2024-07,Seguridad,Seguro barrio Integrity 1/3,32559.0
+2024-07,Seguridad,Servicio técnico CCTV inalámbrico,145000.0
+2024-07,Seguridad,Teléfono guardia puestos 1 y 2,88196.0
+2024-07,Seguridad,Teléfono guardia puestos 1 y 2,163350.0
+2024-07,Servicios,Análisis de agua,259392.0
+2024-07,Servicios,Energía eléctrica,3416916.0
+2024-07,Servicios,Impuesto rentas,60620.0
+2024-07,Servicios,Servicio de aguas,1577.0
+2024-07,Servicios,Urgencias médicas,121680.0
+2024-07,Total,Total mensual,79724893.0
+2024-08,Administración,Aportes y contribuciones,756833.0
+2024-08,Administración,Estudio contable,295800.0
+2024-08,Administración,Estudio jurídico,238100.0
+2024-08,Administración,Gastos bancarios,3066561.0
+2024-08,Administración,Honorarios administración,892357.0
+2024-08,Administración,Proceso de datos,109563.0
+2024-08,Administración,Seguro accidentes personales,6982.0
+2024-08,Administración,Sueldo intendente,948772.0
+2024-08,Espacios verdes,Espacios verdes,4964906.0
+2024-08,Espacios verdes,Poda (retiro de poda),450000.0
+2024-08,Mantenimiento,Artículos de limpieza,2100.0
+2024-08,Mantenimiento,Basani baños químicos,45903.0
+2024-08,Mantenimiento,Basani baños químicos,5000.0
+2024-08,Mantenimiento,Cloro cisterna,120000.0
+2024-08,Mantenimiento,Mano de obra desagotadora puesto 1,90000.0
+2024-08,Mantenimiento,Mantenimiento eléctrico,355114.0
+2024-08,Mantenimiento,Materiales eléctricos,104940.0
+2024-08,Mantenimiento,Servicios de bomba,133100.0
+2024-08,Mantenimiento,Sondeo pozo puesto 1,107700.0
+2024-08,Seguridad,Abono mantenimiento Super Cam,5350693.0
+2024-08,Seguridad,Empresa de seguridad,58791542.0
+2024-08,Seguridad,Garitas,163350.0
+2024-08,Seguridad,Policía adicional,7143030.0
+2024-08,Seguridad,Seguro barrio Integrity 1/3,43870.0
+2024-08,Seguridad,Servicio técnico CCTV inalámbrico,188000.0
+2024-08,Seguridad,Teléfono guardia puestos 1 y 2,105631.0
+2024-08,Servicios,Análisis de agua,259300.0
+2024-08,Servicios,Diferencia impuesto rentas,34220.0
+2024-08,Servicios,Energía eléctrica,3217108.9
+2024-08,Servicios,Impuesto rentas,64760.0
+2024-08,Servicios,Servicio de aguas,1200.0
+2024-08,Servicios,Urgencias médicas,146000.0
+2024-08,Total,Total mensual,88202435.9
+2024-09,Administración,Aportes y contribuciones,576180.0
+2024-09,Administración,Diferencia gastos bancarios,20166.0
+2024-09,Administración,Estudio contable,295800.0
+2024-09,Administración,Estudio jurídico,259000.0
+2024-09,Administración,Gastos bancarios,3284379.0
+2024-09,Administración,Gastos bancarios,149976.0
+2024-09,Administración,Honorarios administración,1017287.0
+2024-09,Administración,Honorarios administración,7090.0
+2024-09,Administración,Proceso de datos,109563.0
+2024-09,Administración,Seguro accidentes personales,6982.0
+2024-09,Administración,Sueldo intendente,948772.0
+2024-09,Espacios verdes,Espacios verdes,5411747.0
+2024-09,Espacios verdes,Poda (retiro de poda),530000.0
+2024-09,Mantenimiento,Artículos de limpieza,9700.0
+2024-09,Mantenimiento,Basani baños químicos,48700.0
+2024-09,Mantenimiento,Cloro cisterna,-45000.0
+2024-09,Mantenimiento,Limpieza SUM,24000.0
+2024-09,Mantenimiento,Mano de obra desagotadora puesto 1,-4240955.0
+2024-09,Mantenimiento,Mantenimiento eléctrico,385653.0
+2024-09,Mantenimiento,Mantenimiento luminarias,422092.63
+2024-09,Mantenimiento,Materiales de arreglo,45000.0
+2024-09,Mantenimiento,Servicios de bomba,144546.0
+2024-09,Seguridad,Abono mantenimiento Super Cam,6035851.0
+2024-09,Seguridad,Empresa de seguridad,68115930.0
+2024-09,Seguridad,Garitas,188760.0
+2024-09,Seguridad,Mantenimiento cámaras (preventivo),278080.0
+2024-09,Seguridad,Netglobal SAS Internet Bunker,88900.0
+2024-09,Seguridad,Policía adicional,7151623.0
+2024-09,Seguridad,Renovación seguro Integrity,217800.0
+2024-09,Seguridad,Seguro barrio Integrity 1/3,43870.0
+2024-09,Seguridad,Seguro barrio Integrity 1/3,19500.0
+2024-09,Seguridad,Seguro barrio Integrity 1/3,115200.0
+2024-09,Seguridad,Teléfono guardia puestos 1 y 2,105631.0
+2024-09,Servicios,Análisis de agua,282737.0
+2024-09,Servicios,Análisis de agua,110000.0
+2024-09,Servicios,Energía eléctrica,3690298.0
+2024-09,Servicios,Impuesto rentas,98400.0
+2024-09,Servicios,Servicio de aguas,1200.0
+2024-09,Servicios,Urgencias médicas,146000.0
+2024-09,Total,Total mensual,96100458.63
+2024-10,Administración,Aportes y contribuciones,566851.0
+2024-10,Administración,Estudio contable,295800.0
+2024-10,Administración,Estudio jurídico,259000.0
+2024-10,Administración,Estudio jurídico,107608.0
+2024-10,Administración,Gastos bancarios,3845405.0
+2024-10,Administración,Honorarios administración,1017287.0
+2024-10,Administración,Proceso de datos,127093.0
+2024-10,Administración,Sueldo intendente,1064028.0
+2024-10,Espacios verdes,Espacios verdes,5411747.0
+2024-10,Espacios verdes,Poda (retiro de poda),530000.0
+2024-10,Mantenimiento,Basani baños químicos,48700.0
+2024-10,Mantenimiento,Basani baños químicos,50000.0
+2024-10,Mantenimiento,Cloro cisterna,250000.0
+2024-10,Mantenimiento,Limpieza perimetral,392767.0
+2024-10,Mantenimiento,Limpieza perimetral,50000.0
+2024-10,Mantenimiento,Limpieza quinchos,75339.0
+2024-10,Mantenimiento,Mantenimiento eléctrico,401851.0
+2024-10,Mantenimiento,Materiales de arreglo,148950.0
+2024-10,Mantenimiento,Materiales de arreglo,46437.0
+2024-10,Mantenimiento,Materiales eléctricos,146709.0
+2024-10,Mantenimiento,Servicios de bomba,150617.0
+2024-10,Seguridad,Abono mantenimiento Super Cam,6035851.0
+2024-10,Seguridad,Cambio de matafuegos,41580.0
+2024-10,Seguridad,Cambio de matafuegos,63000.0
+2024-10,Seguridad,Empresa de seguridad,65918642.4
+2024-10,Seguridad,Garitas,188760.0
+2024-10,Seguridad,Netglobal SAS Internet Bunker,55200.0
+2024-10,Seguridad,Policía adicional,6912570.4
+2024-10,Seguridad,Renovación seguro Integrity,217800.0
+2024-10,Seguridad,Seguro barrio Integrity 1/3,43870.0
+2024-10,Seguridad,Servicio técnico CCTV inalámbrico,535000.0
+2024-10,Seguridad,Teléfono guardia puestos 1 y 2,110905.0
+2024-10,Servicios,Análisis de agua,282737.0
+2024-10,Servicios,Energía eléctrica,4093412.5
+2024-10,Servicios,Impuesto rentas,74380.0
+2024-10,Servicios,Servicio de aguas,2050.0
+2024-10,Servicios,Urgencias médicas,170000.0
+2024-10,Total,Total mensual,99731947.3
+2024-11,Administración,Aportes y contribuciones,561262.0
+2024-11,Administración,Aportes y contribuciones,28350.0
+2024-11,Administración,Diferencia gastos bancarios,56880.0
+2024-11,Administración,Estudio contable,331700.0
+2024-11,Administración,Estudio jurídico,279500.0
+2024-11,Administración,Gastos bancarios,3569535.0
+2024-11,Administración,Honorarios administración,1159707.0
+2024-11,Administración,Librería,13000.0
+2024-11,Administración,Proceso de datos,127093.0
+2024-11,Administración,Proceso de datos,275000.0
+2024-11,Administración,Seguro accidentes personales,6982.0
+2024-11,Administración,Seguro accidentes personales,16067.0
+2024-11,Administración,Sueldo intendente,1082707.0
+2024-11,Espacios verdes,Espacios verdes,5601158.0
+2024-11,Espacios verdes,Poda (retiro de poda),548550.0
+2024-11,Mantenimiento,Artículos de limpieza,18200.0
+2024-11,Mantenimiento,Basani baños químicos,48700.0
+2024-11,Mantenimiento,Cloro cisterna,128000.0
+2024-11,Mantenimiento,Extracción de tierra,40000.0
+2024-11,Mantenimiento,Mano de obra desagotadora puesto 1,16000.0
+2024-11,Mantenimiento,Mantenimiento eléctrico,401851.0
+2024-11,Mantenimiento,Materiales eléctricos,128310.0
+2024-11,Mantenimiento,Servicios de bomba,150617.0
+2024-11,Mantenimiento,Servicios de bomba,54450.0
+2024-11,Mantenimiento,Sondeo pozo puesto 1,200000.0
+2024-11,Seguridad,Abono mantenimiento Super Cam,6035851.0
+2024-11,Seguridad,Abono mantenimiento Super Cam,600000.0
+2024-11,Seguridad,Diferencia teléfono guardia,137980.0
+2024-11,Seguridad,Empresa de seguridad,72175655.0
+2024-11,Seguridad,Garitas,125840.0
+2024-11,Seguridad,Netglobal SAS Internet Bunker,25200.0
+2024-11,Seguridad,Policía adicional,8571640.0
+2024-11,Seguridad,Renovación seguro Integrity,1177575.0
+2024-11,Seguridad,Seguro barrio Integrity 1/3,
+2024-11,Seguridad,Servicio técnico CCTV inalámbrico,72350.0
+2024-11,Seguridad,Teléfono guardia puestos 1 y 2,115343.0
+2024-11,Servicios,Análisis de agua,306700.0
+2024-11,Servicios,Diferencia impuesto rentas,625000.0
+2024-11,Servicios,Energía eléctrica,4825599.0
+2024-11,Servicios,Impuesto rentas,62710.0
+2024-11,Servicios,Servicio de aguas,2050.0
+2024-11,Servicios,Urgencias médicas,210000.0
+2024-11,Total,Total mensual,109913112.0
+2024-12,Administración,Actas (copia),27400.0
+2024-12,Administración,Aportes y contribuciones,553306.0
+2024-12,Administración,Aportes y contribuciones,301000.0
+2024-12,Administración,Diferencia gastos bancarios,13466.0
+2024-12,Administración,Estudio contable,331700.0
+2024-12,Administración,Estudio jurídico,279500.0
+2024-12,Administración,Gastos bancarios,4348718.0
+2024-12,Administración,Honorarios administración,1159707.0
+2024-12,Administración,Librería,2900.0
+2024-12,Administración,Proceso de datos,127093.0
+2024-12,Administración,Seguro accidentes personales,16067.0
+2024-12,Administración,Sueldo intendente,1075223.0
+2024-12,Administración,UTEDYC,237783.0
+2024-12,Espacios verdes,Espacios verdes,5769192.0
+2024-12,Espacios verdes,Poda (retiro de poda),650000.0
+2024-12,Mantenimiento,Basani baños químicos,52100.0
+2024-12,Mantenimiento,Cloro cisterna,
+2024-12,Mantenimiento,Extracción de tierra,80000.0
+2024-12,Mantenimiento,Limpieza quinchos,80000.0
+2024-12,Mantenimiento,Limpieza quinchos,86047.0
+2024-12,Mantenimiento,Mano de obra desagotadora puesto 1,130000.0
+2024-12,Mantenimiento,Mano de obra desagotadora puesto 1,24999.0
+2024-12,Mantenimiento,Mano de obra desagotadora puesto 1,144000.0
+2024-12,Mantenimiento,Mantenimiento eléctrico,443643.69
+2024-12,Mantenimiento,Materiales de arreglo,36928.0
+2024-12,Mantenimiento,Materiales eléctricos,60369.0
+2024-12,Mantenimiento,Servicios de bomba,166281.0
+2024-12,Seguridad,Abono mantenimiento Super Cam,6680777.0
+2024-12,Seguridad,Empresa de seguridad,73172127.0
+2024-12,Seguridad,Garitas,125840.0
+2024-12,Seguridad,Netglobal SAS Internet Bunker,26700.0
+2024-12,Seguridad,Policía adicional,8351063.0
+2024-12,Seguridad,Renovación seguro Integrity,1177575.0
+2024-12,Seguridad,Renovación seguro Integrity,-435600.0
+2024-12,Seguridad,Seguro barrio Integrity 1/3,57000.0
+2024-12,Seguridad,Teléfono guardia puestos 1 y 2,119950.0
+2024-12,Servicios,Análisis de agua,306700.0
+2024-12,Servicios,Energía eléctrica,4887842.0
+2024-12,Servicios,Impuesto rentas,67820.0
+2024-12,Servicios,Impuesto rentas,120000.0
+2024-12,Servicios,Servicio de aguas,2047.0
+2024-12,Servicios,Servicio de aguas,5000.0
+2024-12,Servicios,Urgencias médicas,230000.0
+2024-12,Total,Total mensual,111092263.69
+2025-01,Administración,Aportes y contribuciones,548680.0
+2025-01,Administración,Diferencia gastos bancarios,13466.0
+2025-01,Administración,Diferencia gastos bancarios,-471817.0
+2025-01,Administración,Estudio contable,331700.0
+2025-01,Administración,Estudio jurídico,294000.0
+2025-01,Administración,Gastos bancarios,3876900.0
+2025-01,Administración,Honorarios administración,1275700.0
+2025-01,Administración,Proceso de datos,143615.0
+2025-01,Administración,Seguro accidentes personales,16067.0
+2025-01,Administración,Sueldo intendente,1178908.0
+2025-01,Administración,Sueldo intendente,589454.0
+2025-01,Administración,UTEDYC,46400.0
+2025-01,Espacios verdes,Espacios verdes,5966495.0
+2025-01,Espacios verdes,Poda (retiro de poda),680000.0
+2025-01,Espacios verdes,Poda (retiro de poda),60000.0
+2025-01,Mantenimiento,Artículos de limpieza,756000.0
+2025-01,Mantenimiento,Artículos de limpieza,26000.0
+2025-01,Mantenimiento,Basani baños químicos,52100.0
+2025-01,Mantenimiento,Cloro cisterna,144000.0
+2025-01,Mantenimiento,Desagotadora puesto 1,1318638.0
+2025-01,Mantenimiento,Extracción de tierra,80000.0
+2025-01,Mantenimiento,Limpieza perimetral,-67107.0
+2025-01,Mantenimiento,Limpieza quinchos,100000.0
+2025-01,Mantenimiento,Limpieza quinchos,50000.0
+2025-01,Mantenimiento,Mantenimiento eléctrico,443643.69
+2025-01,Mantenimiento,Materiales de arreglo,32000.0
+2025-01,Mantenimiento,Materiales de arreglo,120000.0
+2025-01,Mantenimiento,Materiales eléctricos,64336.0
+2025-01,Mantenimiento,Servicios de bomba,166281.0
+2025-01,Mantenimiento,Sondeo pozo puesto 1,16739.0
+2025-01,Mantenimiento,Viaje ramas extras,140000.0
+2025-01,Seguridad,Abono mantenimiento Super Cam,6680777.0
+2025-01,Seguridad,Empresa de seguridad,75611198.0
+2025-01,Seguridad,Garitas,135520.0
+2025-01,Seguridad,Mantenimiento cámaras (preventivo),2830.0
+2025-01,Seguridad,Netglobal SAS Internet Bunker,26700.0
+2025-01,Seguridad,Policía adicional,8606993.0
+2025-01,Seguridad,Renovación seguro Integrity,1177575.0
+2025-01,Seguridad,Renovación seguro Integrity,110000.0
+2025-01,Seguridad,Seguro barrio Integrity 1/3,57000.0
+2025-01,Seguridad,Seguro barrio Integrity 1/3,21239.0
+2025-01,Seguridad,Teléfono guardia puestos 1 y 2,128935.0
+2025-01,Seguridad,Teléfono guardia puestos 1 y 2,225700.0
+2025-01,Servicios,Análisis de agua,326000.0
+2025-01,Servicios,Análisis de agua,40800.0
+2025-01,Servicios,Diferencia impuesto rentas,58839.0
+2025-01,Servicios,Diferencia impuesto rentas,1080.0
+2025-01,Servicios,Diferencia impuesto rentas,-4000.0
+2025-01,Servicios,Energía eléctrica,4864551.0
+2025-01,Servicios,Impuesto rentas,67820.0
+2025-01,Servicios,Servicio de aguas,2047.0
+2025-01,Servicios,Urgencias médicas,230000.0
+2025-01,Total,Total mensual,116363802.69
+2025-02,Administración,Aportes y contribuciones,906141.0
+2025-02,Administración,Diferencia gastos bancarios,59604.0
+2025-02,Administración,Diferencia gastos bancarios,35707.0
+2025-02,Administración,Diferencia gastos bancarios,89763.0
+2025-02,Administración,Diferencia proceso de datos,10914.0
+2025-02,Administración,Estudio contable,359200.0
+2025-02,Administración,Estudio jurídico,294000.0
+2025-02,Administración,Gastos bancarios,3966663.0
+2025-02,Administración,Honorarios administración,1275700.0
+2025-02,Administración,Honorarios mediación,194195.0
+2025-02,Administración,Proceso de datos,143615.0
+2025-02,Administración,Proceso de datos,9000.0
+2025-02,Administración,Seguro accidentes personales,16067.0
+2025-02,Administración,Seguro accidentes personales,363440.0
+2025-02,Administración,Sueldo intendente,1191999.0
+2025-02,Administración,Sueldo intendente,199999.0
+2025-02,Administración,UTEDYC,76325.0
+2025-02,Espacios verdes,Espacios verdes,6205157.0
+2025-02,Espacios verdes,Poda (retiro de poda),707000.0
+2025-02,Mantenimiento,Artículos de limpieza,476000.0
+2025-02,Mantenimiento,Basani baños químicos,52100.0
+2025-02,Mantenimiento,Cloro cisterna,
+2025-02,Mantenimiento,Desagotadora puesto 1,66550.0
+2025-02,Mantenimiento,Desagotadora puesto 1,1347024.0
+2025-02,Mantenimiento,Limpieza quinchos,80000.0
+2025-02,Mantenimiento,Mantenimiento eléctrico,488008.0
+2025-02,Mantenimiento,Materiales de arreglo,283181.0
+2025-02,Mantenimiento,Servicios de bomba,182910.0
+2025-02,Mantenimiento,Servicios de bomba,452000.0
+2025-02,Seguridad,Abono mantenimiento Super Cam,6680777.0
+2025-02,Seguridad,Empresa de seguridad,75611198.0
+2025-02,Seguridad,Garitas,135520.0
+2025-02,Seguridad,Garitas,114084.0
+2025-02,Seguridad,Netglobal SAS Internet Bunker,28300.0
+2025-02,Seguridad,Policía adicional,9857384.0
+2025-02,Seguridad,Renovación seguro Integrity,102786.0
+2025-02,Seguridad,Renovación seguro Integrity,1177575.0
+2025-02,Seguridad,Seguro barrio Integrity 1/3,57000.0
+2025-02,Seguridad,Seguro barrio Integrity 1/3,21239.0
+2025-02,Seguridad,Servicio técnico CCTV inalámbrico,360000.0
+2025-02,Seguridad,Teléfono guardia puestos 1 y 2,135014.0
+2025-02,Servicios,Análisis de agua,326000.0
+2025-02,Servicios,Energía eléctrica,4927595.0
+2025-02,Servicios,Impuesto rentas,794330.0
+2025-02,Servicios,Servicio de aguas,2303.0
+2025-02,Total,Total mensual,119863367.0
+2025-03,Administración,Aportes y contribuciones,588566.0
+2025-03,Administración,Diferencia gastos bancarios,-49308.0
+2025-03,Administración,Estudio contable,359200.0
+2025-03,Administración,Estudio jurídico,308600.0
+2025-03,Administración,Gastos bancarios,4004285.0
+2025-03,Administración,Honorarios administración,1467055.0
+2025-03,Administración,Honorarios administración,10800.0
+2025-03,Administración,Librería,16600.0
+2025-03,Administración,Proceso de datos,143615.0
+2025-03,Administración,Seguro accidentes personales,16067.0
+2025-03,Administración,Sueldo intendente,1217659.0
+2025-03,Administración,UTEDYC,51024.0
+2025-03,Espacios verdes,Espacios verdes,6360659.0
+2025-03,Espacios verdes,Poda (retiro de poda),952000.0
+2025-03,Mantenimiento,Arreglos farolas,302998.0
+2025-03,Mantenimiento,Artículos de limpieza,25150.0
+2025-03,Mantenimiento,Artículos de limpieza,406000.0
+2025-03,Mantenimiento,Basani baños químicos,-52100.0
+2025-03,Mantenimiento,Cloro cisterna,140000.0
+2025-03,Mantenimiento,Desagotadora puesto 1,1362659.0
+2025-03,Mantenimiento,Limpieza quinchos,96000.0
+2025-03,Mantenimiento,Mano de obra desagotadora puesto 1,72600.0
+2025-03,Mantenimiento,Mano de obra desagotadora puesto 1,153069.0
+2025-03,Mantenimiento,Mantenimiento eléctrico,488008.0
+2025-03,Mantenimiento,Materiales eléctricos,193753.0
+2025-03,Mantenimiento,Servicios de bomba,182910.0
+2025-03,Mantenimiento,Sondeo pozo puesto 1,77700.0
+2025-03,Seguridad,Abono mantenimiento Super Cam,7182512.0
+2025-03,Seguridad,Abono mantenimiento Super Cam,26940.0
+2025-03,Seguridad,Abono mantenimiento Super Cam,24000.0
+2025-03,Seguridad,Empresa de seguridad,71401381.0
+2025-03,Seguridad,Garitas,135520.0
+2025-03,Seguridad,Garitas,85080.0
+2025-03,Seguridad,Netglobal SAS Internet Bunker,28300.0
+2025-03,Seguridad,Netglobal SAS Internet Bunker,15400.0
+2025-03,Seguridad,Policía adicional,8898198.0
+2025-03,Seguridad,Renovación seguro Integrity,102786.0
+2025-03,Seguridad,Teléfono guardia puestos 1 y 2,135014.0
+2025-03,Servicios,Análisis de agua,342000.0
+2025-03,Servicios,Diferencia impuesto rentas,14225.0
+2025-03,Servicios,Diferencia impuesto rentas,-560340.0
+2025-03,Servicios,Energía eléctrica,4694817.0
+2025-03,Servicios,Impuesto rentas,232720.0
+2025-03,Servicios,Servicio de aguas,3480.0
+2025-03,Total,Total mensual,111657602.0
+2025-04,Administración,Actas (copia),35450.0
+2025-04,Administración,Aportes y contribuciones,593812.0
+2025-04,Administración,Certificado balance 2023,177299.0
+2025-04,Administración,Diferencia gastos bancarios,-319009.0
+2025-04,Administración,Diferencia proceso de datos,77000.0
+2025-04,Administración,Estudio contable,359200.0
+2025-04,Administración,Estudio jurídico,308600.0
+2025-04,Administración,Gastos bancarios,3685275.0
+2025-04,Administración,Honorarios administración,1467055.0
+2025-04,Administración,Proceso de datos,154387.0
+2025-04,Administración,Seguro accidentes personales,16067.0
+2025-04,Administración,Sueldo intendente,1258283.0
+2025-04,Administración,UTEDYC,52696.0
+2025-04,Espacios verdes,Espacios verdes,8003782.0
+2025-04,Espacios verdes,Poda (retiro de poda),1300000.0
+2025-04,Mantenimiento,Artículos de limpieza,17500.0
+2025-04,Mantenimiento,Artículos de limpieza,720000.0
+2025-04,Mantenimiento,Basani baños químicos,135000.0
+2025-04,Mantenimiento,Cloro cisterna,
+2025-04,Mantenimiento,Desagotadora puesto 1,1325000.0
+2025-04,Mantenimiento,Limpieza quinchos,120000.0
+2025-04,Mantenimiento,Mantenimiento eléctrico,510456.0
+2025-04,Mantenimiento,Mantenimiento general,60000.0
+2025-04,Mantenimiento,Materiales eléctricos,139309.0
+2025-04,Mantenimiento,Servicios de bomba,191324.0
+2025-04,Seguridad,Abono mantenimiento Super Cam,7182512.0
+2025-04,Seguridad,Abono mantenimiento Super Cam,437668.0
+2025-04,Seguridad,Cambio de matafuegos,55000.0
+2025-04,Seguridad,Empresa de seguridad,79501470.0
+2025-04,Seguridad,Garitas,145200.0
+2025-04,Seguridad,Mantenimiento cámaras,26940.0
+2025-04,Seguridad,Netglobal SAS Internet Bunker,28300.0
+2025-04,Seguridad,Policía adicional,10008149.0
+2025-04,Seguridad,Renovación seguro Integrity,102786.0
+2025-04,Seguridad,Teléfono guardia puestos 1 y 2,135014.0
+2025-04,Seguridad,Teléfono guardia puestos 1 y 2,169999.0
+2025-04,Servicios,Análisis de agua,342000.0
+2025-04,Servicios,Diferencia impuesto rentas,15864.0
+2025-04,Servicios,Diferencia impuesto rentas,29500.0
+2025-04,Servicios,Energía eléctrica,4797537.0
+2025-04,Servicios,Impuesto rentas,232720.0
+2025-04,Servicios,Servicio de aguas,3525.0
+2025-04,Total,Total mensual,123602670.0
+2025-05,Administración,Aportes y contribuciones,643243.0
+2025-05,Administración,Certificado balance 2023,36300.0
+2025-05,Administración,Diferencia gastos bancarios,9000.0
+2025-05,Administración,Diferencia gastos bancarios,259374.0
+2025-05,Administración,Diferencia proceso de datos,31300.0
+2025-05,Administración,Estudio contable,390000.0
+2025-05,Administración,Estudio jurídico,327800.0
+2025-05,Administración,Gastos bancarios,3944649.0
+2025-05,Administración,Honorarios administración,1599090.0
+2025-05,Administración,Honorarios mediación,130000.0
+2025-05,Administración,Librería,1000.0
+2025-05,Administración,Proceso de datos,154387.0
+2025-05,Administración,Seguro accidentes personales,16067.0
+2025-05,Administración,Sueldo intendente,1250507.0
+2025-05,Administración,UTEDYC,54267.0
+2025-05,Espacios verdes,Espacios verdes,8323933.0
+2025-05,Espacios verdes,Poda (retiro de poda),1300000.0
+2025-05,Mantenimiento,Artículos de limpieza,12400.0
+2025-05,Mantenimiento,Artículos de limpieza,720000.0
+2025-05,Mantenimiento,Cloro cisterna,
+2025-05,Mantenimiento,Desagotadora puesto 1,1378000.0
+2025-05,Mantenimiento,Limpieza SUM,30000.0
+2025-05,Mantenimiento,Limpieza perimetral,30000.0
+2025-05,Mantenimiento,Limpieza perimetral,-30000.0
+2025-05,Mantenimiento,Limpieza quinchos,96000.0
+2025-05,Mantenimiento,Mantenimiento eléctrico,510456.0
+2025-05,Mantenimiento,Mantenimiento general,120000.0
+2025-05,Mantenimiento,Materiales eléctricos,113040.0
+2025-05,Mantenimiento,Servicios de bomba,191324.0
+2025-05,Mantenimiento,Vallas reducción velocidad,78000.0
+2025-05,Mantenimiento,Viaje ramas extras,217800.0
+2025-05,Seguridad,Abono mantenimiento Super Cam,7182503.0
+2025-05,Seguridad,Empresa de seguridad,78852618.0
+2025-05,Seguridad,Garitas,145200.0
+2025-05,Seguridad,Mantenimiento cámaras,88330.0
+2025-05,Seguridad,Mantenimiento cámaras,26940.0
+2025-05,Seguridad,Netglobal SAS Internet Bunker,28300.0
+2025-05,Seguridad,Policía adicional,10852204.0
+2025-05,Seguridad,Renovación seguro Integrity,102786.0
+2025-05,Seguridad,Renovación seguro Integrity,487820.0
+2025-05,Seguridad,Servicio técnico CCTV inalámbrico,619050.0
+2025-05,Seguridad,Teléfono guardia puestos 1 y 2,142521.0
+2025-05,Servicios,Análisis de agua,365000.0
+2025-05,Servicios,Análisis de agua,20400.0
+2025-05,Servicios,Energía eléctrica,5005792.0
+2025-05,Servicios,Impuesto rentas,244190.0
+2025-05,Servicios,Servicio de aguas,3525.0
+2025-05,Total,Total mensual,126105116.0
+2025-06,Administración,Aportes y contribuciones,634927.0
+2025-06,Administración,Diferencia gastos bancarios,335129.0
+2025-06,Administración,Diferencia proceso de datos,11400.0
+2025-06,Administración,Estudio contable,390000.0
+2025-06,Administración,Estudio jurídico,327800.0
+2025-06,Administración,Gastos bancarios,4279778.0
+2025-06,Administración,Honorarios administración,1528740.0
+2025-06,Administración,Honorarios mediación,148893.0
+2025-06,Administración,Proceso de datos,154387.0
+2025-06,Administración,Seguro accidentes personales,16067.0
+2025-06,Administración,Sueldo intendente,1275376.0
+2025-06,Administración,Sueldo intendente,110715.0
+2025-06,Administración,Sueldo intendente,282400.0
+2025-06,Administración,UTEDYC,53928.0
+2025-06,Espacios verdes,Espacios verdes,8573650.0
+2025-06,Espacios verdes,Poda (retiro de poda),1750000.0
+2025-06,Mantenimiento,Artículos de limpieza,832000.0
+2025-06,Mantenimiento,Cloro cisterna,130000.0
+2025-06,Mantenimiento,Desagotadora puesto 1,1472900.0
+2025-06,Mantenimiento,Limpieza SUM,75000.0
+2025-06,Mantenimiento,Limpieza quinchos,96000.0
+2025-06,Mantenimiento,Mano de obra desagotadora puesto 1,14100.0
+2025-06,Mantenimiento,Mantenimiento eléctrico,543636.0
+2025-06,Mantenimiento,Materiales de arreglo,62754.0
+2025-06,Mantenimiento,Materiales eléctricos,207919.0
+2025-06,Mantenimiento,Servicios de bomba,203759.0
+2025-06,Mantenimiento,Vallas reducción velocidad,44000.0
+2025-06,Seguridad,Abono mantenimiento Super Cam,7841139.0
+2025-06,Seguridad,Empresa de seguridad,82548440.0
+2025-06,Seguridad,Garitas,145200.0
+2025-06,Seguridad,Mantenimiento cámaras,88330.0
+2025-06,Seguridad,Mantenimiento cámaras,26940.0
+2025-06,Seguridad,Mantenimiento cámaras (preventivo),120000.0
+2025-06,Seguridad,Netglobal SAS Internet Bunker,28300.0
+2025-06,Seguridad,Policía adicional,11230725.0
+2025-06,Seguridad,Renovación seguro Integrity,102786.0
+2025-06,Seguridad,Teléfono guardia puestos 1 y 2,142521.0
+2025-06,Servicios,Análisis de agua,365000.0
+2025-06,Servicios,Diferencia impuesto rentas,11370.0
+2025-06,Servicios,Energía eléctrica,5008919.0
+2025-06,Servicios,Impuesto rentas,196830.0
+2025-06,Servicios,Servicio de aguas,3525.0
+2025-06,Total,Total mensual,131415283.0
+2025-08,Administración,Actas (copia),3900.0
+2025-08,Administración,Aportes y contribuciones,1029611.0
+2025-08,Administración,Diferencia gastos bancarios,823356.0
+2025-08,Administración,Estudio contable,415000.0
+2025-08,Administración,Estudio jurídico,342000.0
+2025-08,Administración,Gastos bancarios,4692461.0
+2025-08,Administración,Honorarios administración,1743000.0
+2025-08,Administración,Honorarios mediación,169179.0
+2025-08,Administración,Proceso de datos,164421.0
+2025-08,Administración,Seguro accidentes personales,16067.0
+2025-08,Administración,Sueldo intendente,1341307.0
+2025-08,Administración,UTEDYC,85540.0
+2025-08,Espacios verdes,Espacios verdes,8920285.0
+2025-08,Espacios verdes,Poda (retiro de poda),1825800.0
+2025-08,Mantenimiento,Artículos de limpieza,48200.0
+2025-08,Mantenimiento,Cloro cisterna,280000.0
+2025-08,Mantenimiento,Extracción de tierra,1270000.0
+2025-08,Mantenimiento,Limpieza SUM,910000.0
+2025-08,Mantenimiento,Limpieza quinchos,96000.0
+2025-08,Mantenimiento,Mantenimiento eléctrico,625182.0
+2025-08,Mantenimiento,Mantenimiento general,120000.0
+2025-08,Mantenimiento,Materiales de arreglo,65611.0
+2025-08,Mantenimiento,Materiales eléctricos,529836.0
+2025-08,Mantenimiento,Pinturería,56605.0
+2025-08,Mantenimiento,Servicios de bomba,234324.0
+2025-08,Mantenimiento,Vallas reducción velocidad,740000.0
+2025-08,Mantenimiento,Viaje ramas extras,393250.0
+2025-08,Seguridad,Cambio de matafuegos,45000.0
+2025-08,Seguridad,Diferencia teléfono guardia,3894.0
+2025-08,Seguridad,Empresa de seguridad,84934087.0
+2025-08,Seguridad,Garitas,145200.0
+2025-08,Seguridad,Mantenimiento cámaras,7929469.0
+2025-08,Seguridad,Mantenimiento cámaras (preventivo),26940.0
+2025-08,Seguridad,Netglobal SAS Internet Bunker,28300.0
+2025-08,Seguridad,Policía adicional,13032447.0
+2025-08,Seguridad,Renovación seguro Integrity,0.0
+2025-08,Seguridad,Teléfono guardia puestos 1 y 2,154092.0
+2025-08,Servicios,Análisis de agua,380000.0
+2025-08,Servicios,Diferencia impuesto rentas,1810.0
+2025-08,Servicios,Energía eléctrica,4247032.0
+2025-08,Servicios,Impuesto rentas,236230.0
+2025-08,Servicios,Servicio de aguas,3480.0
+2025-08,Total,Total mensual,138108916.0

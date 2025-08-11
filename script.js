@@ -282,14 +282,111 @@ document.addEventListener('DOMContentLoaded', () => {
         const categories = filteredData.map(item => item.mes);
         const seriesData = filteredData.map(item => item.monto);
 
+        // Calculate percentage changes between months
+        const percentageChanges = [];
+        for (let i = 1; i < seriesData.length; i++) {
+            const prev = seriesData[i - 1];
+            const current = seriesData[i];
+            const change = prev !== 0 ? ((current - prev) / prev) * 100 : 0;
+            percentageChanges.push({
+                from: categories[i - 1],
+                to: categories[i],
+                value: Math.round(change * 10) / 10, // Round to 1 decimal place
+                color: change >= 0 ? '#e74c3c' : '#2ecc71' // Red for increase, green for decrease
+            });
+        }
+
         Highcharts.chart('individual-chart', {
             chart: { type: 'line' },
             title: { text: null },
-            xAxis: { categories: categories, title: { text: 'Mes' } },
-            yAxis: { title: { text: 'Monto (ARS)' } },
-            tooltip: { pointFormat: '<b>{point.y:,.0f} ARS</b>' },
-            series: [{ name: 'Gasto Individual', data: seriesData, color: '#7cb5ec' }],
-            credits: { enabled: false }
+            xAxis: { 
+                categories: categories, 
+                title: { text: 'Mes' },
+                labels: {
+                    formatter: function() {
+                        // Add the month to the x-axis labels
+                        return this.value;
+                    }
+                }
+            },
+            yAxis: { 
+                title: { text: 'Monto (ARS)' },
+                labels: {
+                    formatter: function() {
+                        return Highcharts.numberFormat(this.value, 0, ',', '.');
+                    }
+                }
+            },
+            tooltip: { 
+                pointFormat: '<b>{point.y:,.0f} ARS</b>',
+                valueDecimals: 0,
+                valueSuffix: ' ARS'
+            },
+            plotOptions: {
+                series: {
+                    dataLabels: {
+                        enabled: true,
+                        formatter: function() {
+                            // Show value on the point
+                            return Highcharts.numberFormat(this.y, 0, ',', '.');
+                        },
+                        style: {
+                            fontWeight: 'bold',
+                            textOutline: '1px contrast',
+                            color: 'white'
+                        },
+                        y: -15
+                    },
+                    lineWidth: 3,
+                    marker: {
+                        lineWidth: 1,
+                        lineColor: '#fff',
+                        radius: 5,
+                        states: {
+                            hover: {
+                                radius: 7,
+                                lineWidth: 2
+                            }
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Gasto Individual', 
+                data: seriesData.map((value, index) => ({
+                    y: value,
+                    dataLabels: {
+                        enabled: index > 0, // Only show data labels for points after the first one
+                        formatter: function() {
+                            if (index === 0) return '';
+                            const change = percentageChanges[index - 1];
+                            return `<span style="color:${change.color}">${change.value >= 0 ? '+' : ''}${change.value}%</span>`;
+                        },
+                        align: 'left',
+                        verticalAlign: 'middle',
+                        x: 15,
+                        y: -5,
+                        style: {
+                            fontSize: '12px',
+                            fontWeight: 'normal',
+                            textOutline: 'none'
+                        }
+                    }
+                })),
+                color: '#7cb5ec',
+                zoneAxis: 'x',
+                zones: percentageChanges.map((change, i) => ({
+                    value: i + 1.5,
+                    color: change.color.replace('ff', '33') + '33' // Add transparency
+                })).concat([{
+                    value: 1000,
+                    color: '#7cb5ec'
+                }])
+            }],
+            credits: { enabled: false },
+            legend: {
+                enabled: false
+            }
         });
     }
 
