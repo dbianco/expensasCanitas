@@ -132,11 +132,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function initializeFilters() {
-        allMonths = [...new Set(expensesData.map(d => d.mes))].sort();
+        // Sort months from newest to oldest
+        allMonths = [...new Set(expensesData.map(d => d.mes))].sort((a, b) => {
+            // Parse YYYY-MM format correctly
+            const [yearA, monthA] = a.split('-').map(Number);
+            const [yearB, monthB] = b.split('-').map(Number);
+            
+            // Compare years first, then months
+            if (yearB !== yearA) return yearB - yearA;
+            return monthB - monthA; // Sort in descending order (newest first)
+        });
+        
         allCategories = [...new Set(expensesData.map(d => d.categoria))].sort();
         allCategories.forEach((cat, index) => { categoryColorMap[cat] = PASTEL_COLORS[index % PASTEL_COLORS.length]; });
         
-        const lastTwoMonths = allMonths.slice(-2);
+        // Select the two most recent months by default (now at the start of the array)
+        const lastTwoMonths = allMonths.slice(0, 2);
         populateFilter(monthFilterList, allMonths, lastTwoMonths);
         populateFilter(categoryFilterList, allCategories, allCategories);
         
@@ -272,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const selectedMonths = getSelectedMonths();
         const filteredData = individualExpensesData
             .filter(item => selectedMonths.length === 0 || selectedMonths.includes(item.mes))
-            .sort((a, b) => allMonths.indexOf(a.mes) - allMonths.indexOf(b.mes));
+            .sort((a, b) => allMonths.indexOf(b.mes) - allMonths.indexOf(a.mes)); // Reverse sort to show newest first
 
         if (filteredData.length === 0) {
             document.getElementById('individual-chart').innerHTML = '<div class="text-center p-4">No hay datos individuales para los meses seleccionados.</div>';
@@ -392,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateBarChart(data) {
         const selectedCategories = [...new Set(data.map(d => d.categoria))].filter(c => c !== 'Total').sort();
-        const selectedMonths = [...new Set(data.map(d => d.mes))].sort((a, b) => allMonths.indexOf(a) - allMonths.indexOf(b));
+        const selectedMonths = [...new Set(data.map(d => d.mes))].sort((a, b) => allMonths.indexOf(b) - allMonths.indexOf(a)); // Reverse sort to show newest first
 
         const series = selectedMonths.map((month, monthIndex) => ({
             name: month,
