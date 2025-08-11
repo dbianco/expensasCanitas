@@ -455,18 +455,39 @@ document.addEventListener('DOMContentLoaded', () => {
         const container = document.getElementById('sankey-chart-container');
         const chartDiv = document.getElementById('sankey-chart');
         const selectedMonths = getSelectedMonths();
-
-        if (selectedMonths.length === 0) {
-            if (container) container.style.display = 'none';
+        const isMobileView = window.innerWidth < 768;
+        
+        // Ensure container is visible and properly sized
+        if (!container || !chartDiv) {
             return;
+        }
+        
+        // Make sure container is visible
+        container.style.display = 'block';
+        container.style.overflow = 'visible';
+        
+        if (selectedMonths.length === 0) {
+            container.style.display = 'none';
+            return;
+        }
+        
+        // Clear any previous chart
+        while (chartDiv.firstChild) {
+            chartDiv.removeChild(chartDiv.firstChild);
         }
 
         const latestMonth = selectedMonths[selectedMonths.length - 1];
         const dataForLatestMonth = filteredData.filter(item => item.mes === latestMonth);
+        
+        if (dataForLatestMonth.length === 0) {
+            container.style.display = 'none';
+            return;
+        }
 
         const categoryTotals = dataForLatestMonth.reduce((acc, item) => {
             if (item.categoria && item.categoria !== 'Total') {
-                acc[item.categoria] = (acc[item.categoria] || 0) + item.monto;
+                const amount = parseFloat(item.monto) || 0;
+                acc[item.categoria] = (acc[item.categoria] || 0) + amount;
             }
             return acc;
         }, {});
@@ -481,7 +502,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (!highestCategory || highestAmount <= 0) {
-            if (container) container.style.display = 'none';
+            container.style.display = 'none';
             return;
         }
 
@@ -527,10 +548,10 @@ document.addEventListener('DOMContentLoaded', () => {
         // Sort by amount in descending order
         const sortedItems = mainItems.sort((a, b) => b.monto - a.monto);
         
-        // Calculate chart height based on number of items
-        const minHeight = 400; // Minimum height in pixels
-        const itemHeight = 35; // Height per item in pixels
-        const chartHeight = Math.max(minHeight, 100 + (sortedItems.length * itemHeight));
+        // Calculate chart height based on number of items - more compact on mobile
+        const minHeight = isMobileView ? 500 : 400; // Higher minimum on mobile
+        const itemHeight = isMobileView ? 22 : 35; // More compact items on mobile
+        const chartHeight = Math.max(minHeight, 60 + (sortedItems.length * itemHeight));
         
         // Prepare nodes and links for the Sankey chart
         const nodes = [
@@ -569,6 +590,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }))
         ];
         
+        // Create the chart with responsive configuration
+        const maxMobileHeight = 600; // Reduced maximum height
+        const dynamicHeight = Math.min(maxMobileHeight, chartHeight);
+        
+        // Calculate width based on container
+        const containerWidth = container.offsetWidth;
+        const chartWidth = Math.max(containerWidth, 800); // Ensure minimum width of 800px
+        
         const links = sortedItems.map((item, index) => ({
             from: highestCategory,
             to: `${item.subcategoria || 'item'}-${index}`,
@@ -582,14 +611,24 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }));
         
-        // Create the chart with simplified configuration
-        // Ensure minimum height for consistency
-        const finalChartHeight = Math.max(400, chartHeight);
         Highcharts.chart(chartDiv, {
             chart: {
                 type: 'sankey',
-                height: '400px',
-                marginRight: 300  // Increased right margin for labels
+                height: isMobileView ? dynamicHeight : 400, // Reduced height
+                width: chartWidth, // Set explicit width
+                marginRight: isMobileView ? 5 : 100,
+                marginLeft: isMobileView ? 5 : 20,
+                backgroundColor: 'transparent',
+                style: {
+                    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+                    fontSize: isMobileView ? '10px' : '11px' // Slightly smaller font
+                },
+                events: {
+                    load: function() {
+                        // Force redraw to ensure proper rendering on mobile
+                        this.reflow();
+                    }
+                }
             },
             title: {
                 text: `${highestCategory} (Mes: ${latestMonth})`,
@@ -601,22 +640,31 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             plotOptions: {
                 sankey: {
-                    nodeWidth: 30,
-                    nodePadding: 20,
+                    nodeWidth: isMobileView ? 10 : 20,  
+                    nodePadding: isMobileView ? 8 : 15,  
                     width: '100%',
                     showInLegend: false,
+                    cursor: 'default',
                     node: {
                         labels: {
                             enabled: true,
                             style: {
-                                fontSize: '12px',
-                                textOverflow: 'none',
+                                fontSize: isMobileView ? '9px' : '11px',
+                                textOverflow: 'ellipsis',
                                 whiteSpace: 'nowrap',
-                                width: '200px',
-                                textAlign: 'left'
+                                width: isMobileView ? '100px' : '160px',
+                                textAlign: 'left',
+                                textOutline: 'none',
+                                fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
                             },
                             useHTML: true
-                        }
+                        },
+                        nodePadding: isMobileView ? 3 : 6,  // Reduced vertical padding
+                        height: isMobileView ? 6 : 8,      // Shorter nodes
+                        nodeWidth: 15,                     
+                        width: 12,                         // Keep the narrow left column
+                        column: 0,                         
+                        level: 0
                     },
                     dataLabels: {
                         enabled: true,

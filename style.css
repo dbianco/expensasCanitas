@@ -84,6 +84,24 @@ select {
     min-height: 400px; /* Altura mínima para el gráfico de torta */
 }
 
+/* Estilo específico para el gráfico Sankey */
+#sankey-chart-container {
+    min-height: 500px;
+    width: 100%;
+    overflow: visible;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Asegura que el contenedor del gráfico ocupe todo el espacio disponible */
+#sankey-chart {
+    width: 100% !important;
+    height: 500px !important;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: white;
+}
+
 h2 {
     text-align: center;
     font-size: 1.2em;
@@ -93,11 +111,31 @@ h2 {
 
 @media (max-width: 900px) {
     .charts {
-        gap: 25px;
+        gap: 20px;
     }
 
     .chart-container {
         width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        
+        h2 {
+            font-size: 1.1em;
+            padding: 0 5px;
+            margin-bottom: 10px;
+        }
+        
+        /* Específico para el contenedor del gráfico Sankey en móviles */
+        &#sankey-chart-container {
+            min-height: 500px;
+            height: auto;
+            overflow: visible;
+            
+            #sankey-chart {
+                height: 500px !important;
+                min-height: 500px;
+            }
+        }
         margin: 0 auto;
     }
     

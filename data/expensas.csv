@@ -415,7 +415,7 @@ mes,categoria,subcategoria,monto
 2024-11,Seguridad,Netglobal SAS Internet Bunker,25200
 2024-11,Seguridad,Policía adicional,8571640
 2024-11,Seguridad,Renovación seguro Integrity,1177575
-2024-11,Seguridad,Seguro barrio Integrity 1/3,
+2024-11,Seguridad,Seguro barrio Integrity 1/3,0
 2024-11,Seguridad,Servicio técnico CCTV inalámbrico,72350
 2024-11,Seguridad,Teléfono guardia puestos 1 y 2,115343
 2024-11,Servicios,Análisis de agua,306700
@@ -441,7 +441,7 @@ mes,categoria,subcategoria,monto
 2024-12,Espacios verdes,Espacios verdes,5769192
 2024-12,Espacios verdes,Poda (retiro de poda),650000
 2024-12,Mantenimiento,Basani baños químicos,52100
-2024-12,Mantenimiento,Cloro cisterna,
+2024-12,Mantenimiento,Cloro cisterna,0
 2024-12,Mantenimiento,Extracción de tierra,80000
 2024-12,Mantenimiento,Limpieza quinchos,80000
 2024-12,Mantenimiento,Limpieza quinchos,86047
@@ -543,7 +543,7 @@ mes,categoria,subcategoria,monto
 2025-02,Espacios verdes,Poda (retiro de poda),707000
 2025-02,Mantenimiento,Artículos de limpieza,476000
 2025-02,Mantenimiento,Basani baños químicos,52100
-2025-02,Mantenimiento,Cloro cisterna,
+2025-02,Mantenimiento,Cloro cisterna,0
 2025-02,Mantenimiento,Desagotadora puesto 1,66550
 2025-02,Mantenimiento,Desagotadora puesto 1,1347024
 2025-02,Mantenimiento,Limpieza quinchos,80000
@@ -631,7 +631,7 @@ mes,categoria,subcategoria,monto
 2025-04,Mantenimiento,Artículos de limpieza,17500
 2025-04,Mantenimiento,Artículos de limpieza,720000
 2025-04,Mantenimiento,Basani baños químicos,135000
-2025-04,Mantenimiento,Cloro cisterna,
+2025-04,Mantenimiento,Cloro cisterna,0
 2025-04,Mantenimiento,Desagotadora puesto 1,1325000
 2025-04,Mantenimiento,Limpieza quinchos,120000
 2025-04,Mantenimiento,Mantenimiento eléctrico,510456
@@ -675,7 +675,7 @@ mes,categoria,subcategoria,monto
 2025-05,Espacios verdes,Poda (retiro de poda),1300000
 2025-05,Mantenimiento,Artículos de limpieza,12400
 2025-05,Mantenimiento,Artículos de limpieza,720000
-2025-05,Mantenimiento,Cloro cisterna,
+2025-05,Mantenimiento,Cloro cisterna,0
 2025-05,Mantenimiento,Desagotadora puesto 1,1378000
 2025-05,Mantenimiento,Limpieza SUM,30000
 2025-05,Mantenimiento,Limpieza perimetral,30000

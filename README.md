@@ -1,24 +1,29 @@
 # Dashboard de Expensas de Barrio Privado
 
-Este proyecto es un dashboard interactivo y responsivo diseñado para visualizar y analizar los datos de expensas de un barrio privado. La aplicación carga datos desde un archivo CSV y los presenta en una serie de gráficos dinámicos, permitiendo a los usuarios filtrar y explorar la información de manera intuitiva.
+Este proyecto es un dashboard interactivo y responsivo diseñado para visualizar y analizar los datos de expensas de un barrio privado. La aplicación carga datos desde archivos CSV y los presenta en una serie de gráficos dinámicos, permitiendo a los usuarios filtrar y explorar la información de manera intuitiva.
 
 ## 🚀 Características Principales
 
-- **Visualización de Datos Avanzada:** Tres tipos de gráficos interactivos generados con **Highcharts**:
-  - **Gráfico de Líneas (Evolución Mensual):** Muestra la evolución de los gastos a lo largo del tiempo para múltiples categorías.
-  - **Gráfico de Barras (Gastos por Categoría):** Compara los gastos totales por categoría con colores personalizados.
-  - **Gráfico de Torta (Distribución):** Muestra la proporción de gastos por categoría de manera visual.
+- **Visualización de Datos Avanzada:** Múltiples gráficos interactivos generados con **Highcharts**:
+  - **Gráfico de Líneas (Evolución Mensual Gastos Totales):** Muestra la evolución de los gastos a lo largo del tiempo para múltiples categorías.
+  - **Gráfico de Líneas (Evolución Gastos Individuales):** Muestra la evolución de gastos individuales a lo largo del tiempo.
+  - **Gráfico de Barras Horizontales (Gastos por Categoría):** Muestra los gastos mensuales por categoría con una barra por mes.
+  - **Gráfico de Torta (Proporción por Categoría):** Muestra la distribución porcentual de gastos por categoría.
+  - **Diagrama de Sankey (Desglose Detallado):** Muestra el flujo de gastos para la categoría con mayor monto, desglosado por subcategorías.
 
 - **Filtros Inteligentes:**
-  - **Filtro de Meses:** Menú desplegable multi-selección con checkboxes.
+  - **Filtro de Meses:** Menú desplegable multi-selección con checkboxes, ordenado del mes más reciente al más antiguo.
   - **Filtro de Categorías:** Permite seleccionar múltiples categorías para comparar.
   - **Selección Múltiple:** Soporta selección de múltiples elementos con opción "Todos".
   - **Interfaz Intuitiva:** Los botones muestran la selección actual de manera clara.
+  - **Filtrado en Tiempo Real:** Los gráficos se actualizan automáticamente al cambiar los filtros.
 
 - **Diseño Moderno y Responsivo:**
   - Totalmente adaptable a dispositivos móviles, tablets y escritorio.
-  - Interfaz limpia y profesional con paleta de colores consistente.
+  - Interfaz limpia y profesional con paleta de colores pastel.
   - Gráficos que se ajustan automáticamente al tamaño de la pantalla.
+  - Diseño optimizado para móviles con gráficos apilados verticalmente.
+  - Visualización de Sankey con altura dinámica basada en la cantidad de datos.
 
 - **Tecnologías Utilizadas:**
   - Highcharts para visualizaciones interactivas
@@ -31,12 +36,23 @@ Este proyecto es un dashboard interactivo y responsivo diseñado para visualizar
 ```
 expensasCanitas/
 ├── data/
-│   └── expensas.csv      # Archivo con los datos de gastos en formato CSV
+│   ├── expensas.csv      # Archivo con los datos de gastos generales en formato CSV
+│   └── individual.csv    # Archivo con los datos de gastos individuales
 ├── index.html            # Estructura principal de la página web
 ├── script.js             # Lógica principal de la aplicación
 ├── style.css             # Estilos personalizados
 └── README.md             # Documentación del proyecto
 ```
+
+## 🆕 Novedades
+
+- **Agosto 2024:**
+  - Agregado gráfico de Sankey para visualizar el desglose de gastos de la categoría principal
+  - Mejorada la visualización en dispositivos móviles
+  - Ordenamiento de meses de más reciente a más antiguo en los filtros
+  - Agrupación automática de subcategorías menores al 1% como 'Otros'
+  - Optimización del rendimiento para grandes conjuntos de datos
+  - Mejoras en la paleta de colores y la legibilidad
 
 ## 🚀 Cómo Ejecutar el Proyecto
 
